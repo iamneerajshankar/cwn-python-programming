@@ -1,0 +1,36 @@
+Introduction to sets
+-----------------------------------------------------------------------------------------------------------------------
+Set is an unordered collection of unique elements. Sets are defined by enclosing the elements in curly braces {}, and 
+duplicate elements are not allowed.
+
+Example Set --> fruits = {"apple", "banana", "cherry"}
+
+Common Set Operations:
+-----------------------------------------------------------------------------------------------------------------------
+Adding Elements: fruits.add("orange")
+Removing Elements: fruits.remove("banana")
+# Note: If the element is not present, remove() will raise a KeyError. Use discard() to avoid this.
+fruits.discard("banana")
+
+Set Methods:
+-----------------------------------------------------------
+1. union()
+-----------------------------
+Returns a new set containing all distinct elements from all sets.
+
+-----------------------------
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+union_set = set1.union(set2)
+# Result: {1, 2, 3, 4, 5}
+-----------------------------
+
+2. intersection()
+-----------------------------
+Returns a new set containing common elements from all sets.
+
+intersection_set = set1.intersection(set2)
+# Result: {3}
+
+
+
